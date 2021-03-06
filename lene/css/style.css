@@ -1,0 +1,356 @@
+@charset "UTF-8";
+
+/*Обнуление*/
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+body {
+  overflow: hidden;
+  font-family: Comfortaa;
+  width: 100vw;
+  height: 100vh;
+}
+
+.content {
+  width: 100vw;
+  height: 100vh;
+  background: #FFE5E5;
+  overflow: hidden;
+}
+
+.wrapper {
+  width: 100%;
+  height: 75%;
+  position: relative;
+}
+
+svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -85%) scale(1.3);
+}
+
+#mt {
+  padding: 0 10px 0 10px;
+  position: absolute;
+  bottom: 7%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#mt th {
+  height: 98px;
+}
+
+caption {
+  color: #76453E;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+.year {
+  color: #76453E;
+  font-size: 50px;
+  padding-right: 30px;
+}
+
+.year p {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.month,
+.day {
+  font-size: 50px;
+  padding-right: 30px;
+  color: #76453E;
+}
+
+.month p,
+.day p {
+  font-size: 35px;
+}
+
+.hour {
+  font-size: 40px;
+  padding: 0 20px 0 60px;
+  color: #76453E;
+}
+
+.hour p {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.clock {
+  font-size: 40px;
+  padding: 0 10px 0 10px;
+  color: #76453E;
+}
+
+.clock p {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+@media (max-width: 980px) {
+  #mt {
+    width: 90%;
+  }
+
+  .month,
+  .day {
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 880px) {
+  caption {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 875px) {
+  #mt th {
+    height: 80px;
+  }
+
+  .year {
+    padding-right: 10px;
+  }
+
+  .year p {
+    font-size: 20px;
+  }
+
+  .month p,
+  .day p {
+    font-size: 20px;
+  }
+
+  .hour p {
+    font-size: 15px;
+  }
+
+  .clock p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 610px) {
+  svg {
+    transform: translate(-50%, -55%) scale(1);
+  }
+
+  #mt tr {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 590px) {
+  #mt tr {
+    width: 55%;
+    margin: 0 auto;
+    transform: translateX(6%);
+  }
+
+  .hour {
+    padding: 20px 10px 0 5px;
+  }
+
+  .clock {
+    padding: 20px 10px 0 10px;
+  }
+}
+
+@media (max-width: 490px) {
+  #mt tr {
+    width: 70%;
+  }
+}
+
+@media (max-width: 430px) {
+  .nowrap {
+    flex: 0 0 100%;
+  }
+
+  caption {
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 400px) {
+  #mt tr {
+    width: 79%;
+  }
+}
+
+@media (max-width: 360px) {
+  #mt tr {
+    width: 85%;
+  }
+}
+@supports (-webkit-appearance:none){
+
+}
+
+ @media (max-width: 980px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-width: 880px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-width: 875px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-width: 610px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-width: 590px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-width: 490px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-width: 430px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-width: 400px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-width: 360px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
