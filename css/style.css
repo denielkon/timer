@@ -99,7 +99,7 @@ body {
 .content {
   width: 100vw;
   height: 100vh;
-  background: #FFE5E5;
+  background: #eed6e0ы;
   overflow: hidden;
 }
 
@@ -109,7 +109,7 @@ body {
   position: relative;
 }
 
-#lottie_7 {
+#lottie {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -129,7 +129,7 @@ body {
 }
 
 caption {
-  color: #76453E;
+  color: #853959;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 35px;
@@ -137,7 +137,7 @@ caption {
 }
 
 .year {
-  color: #76453E;
+  color: #853959;
   font-size: 50px;
   padding-right: 30px;
 }
@@ -151,7 +151,7 @@ caption {
 .day {
   font-size: 50px;
   padding-right: 30px;
-  color: #76453E;
+  color: #853959;
 }
 
 .month p,
@@ -162,7 +162,7 @@ caption {
 .hour {
   font-size: 40px;
   padding: 0 20px 0 60px;
-  color: #76453E;
+  color: #853959;
 }
 
 .hour p {
@@ -173,12 +173,24 @@ caption {
 .clock {
   font-size: 40px;
   padding: 0 10px 0 10px;
-  color: #76453E;
+  color: #853959;
 }
 
 .clock p {
   font-size: 30px;
   font-weight: bold;
+}
+
+.slider__item {
+  opacity: 0.7;
+}
+
+.slider__item.slick-center {
+  opacity: 1;
+}
+
+.slider__item img {
+  max-height: 80%;
 }
 
 .slick-track {
@@ -196,13 +208,13 @@ caption {
 .slider {
   overflow: hidden;
   position: relative;
-  padding-top: 5%;
+  padding-top: 3%;
   max-height: 70vh;
 }
 
 .slider .slick-arrow {
   position: absolute;
-  top: 55%;
+  top: 50%;
   z-index: 10;
   font-size: 0;
 }
@@ -300,7 +312,7 @@ caption {
 }
 
 @media (max-width: 610px) {
-  #lottie_7 {
+  #lottie {
     transform: translate(-50%, -55%) scale(1);
   }
 
@@ -329,7 +341,7 @@ caption {
 @media (max-width: 530px) {
   .slider__item img {
     padding: 0 25px;
-    max-width: 100%;
+    max-width: 130%;
   }
 
   .slider {
@@ -343,7 +355,7 @@ caption {
   }
 
   .slider .slick-arrow {
-    top: 60%;
+    top: 55%;
   }
 }
 
