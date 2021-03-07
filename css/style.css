@@ -399,7 +399,14 @@ caption {
 
 @media (max-width: 360px) {
   #mt tr {
-    width: 86%;
+    width: 85%;
+  }
+}
+
+@media (max-width: 350px) {
+  .slider__item img {
+    padding: 0 15px;
+    height: 30%;
   }
 }
 @supports (-webkit-appearance:none){
@@ -536,6 +543,14 @@ caption {
 }
 
  @media (max-width: 360px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-width: 350px){
 
 @supports (-webkit-appearance:none){
 
