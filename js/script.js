@@ -1,8 +1,7 @@
 $(document).ready(function() {
 var TMR = 0, myDate = '23.08.2016 00:00:00';
  
-onload = function ()
-{
+
 setInterval (function ()
    {
    var a = myDate.split (' '),
@@ -25,9 +24,9 @@ setInterval (function ()
    if (D [3] < 0) D [3] += 24,                                                   D [2]--;
    if (D [2] < 0) D [2] = C [2] + new Date (C [0], C [1], 0).getDate () - T [2], D [1]--;
    if (D [1] < 0) D [1] = C [1] + 11 - T [1],                                    D [0]--;
-   for (j = 0; j < 6; j++) formTxt (D [j], j);
+   for (j = 0; j < 6; j++) setText (D [j], j);
  
-      function formTxt (n, q)
+      function setText (n, q)
       {
       var w = [['год'    , 'года'   , 'лет'    ],  // 0, M
                ['месяц'  , 'месяца' , 'месяцев'],  // 1, M
@@ -40,9 +39,9 @@ setInterval (function ()
           t = w [q] [l];
 
      
-      document.getElementById ('mt').children [q].innerHTML  = n + '<p>' + t; 
+      document.getElementById('mt').children [q].innerHTML  = n + '<p>' + t; 
       }
    TMR = 1000;
    }, TMR);
-}
+
 });
