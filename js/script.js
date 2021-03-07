@@ -5,7 +5,7 @@ $(document).ready(function() {
     adaptiveHeight: true,
     infinite: true,
     autoplay: true,
-    autoplaySpeed:3000,
+    autoplaySpeed:6000,
     pauseOnFocus: true,
     centerMode: true  
     

@@ -99,7 +99,7 @@ body {
 .content {
   width: 100vw;
   height: 100vh;
-  background: #eed6e0ы;
+  background: #eed6e0;
   overflow: hidden;
 }
 
@@ -214,7 +214,7 @@ caption {
 
 .slider .slick-arrow {
   position: absolute;
-  top: 50%;
+  top: 45%;
   z-index: 10;
   font-size: 0;
 }
@@ -355,7 +355,7 @@ caption {
   }
 
   .slider .slick-arrow {
-    top: 55%;
+    top: 50%;
   }
 }
 
@@ -383,7 +383,7 @@ caption {
 
 @media (max-width: 360px) {
   #mt tr {
-    width: 90%;
+    width: 88%;
   }
 }
 @supports (-webkit-appearance:none){
