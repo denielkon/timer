@@ -1,6 +1,17 @@
 $(document).ready(function() {
-var TMR = 0, myDate = '23.08.2016 00:00:00';
- 
+ $('.slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    adaptiveHeight: true,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed:3000,
+    pauseOnFocus: true,
+    centerMode: true  
+    
+ });
+
+var TMR = 0, myDate = '2.03.2021 21:50:00';
 
 setInterval (function ()
    {
@@ -24,9 +35,9 @@ setInterval (function ()
    if (D [3] < 0) D [3] += 24,                                                   D [2]--;
    if (D [2] < 0) D [2] = C [2] + new Date (C [0], C [1], 0).getDate () - T [2], D [1]--;
    if (D [1] < 0) D [1] = C [1] + 11 - T [1],                                    D [0]--;
-   for (j = 0; j < 6; j++) setText (D [j], j);
+   for (j = 0; j < 6; j++) formTxt (D [j], j);
  
-      function setText (n, q)
+      function formTxt (n, q)
       {
       var w = [['год'    , 'года'   , 'лет'    ],  // 0, M
                ['месяц'  , 'месяца' , 'месяцев'],  // 1, M
@@ -37,9 +48,7 @@ setInterval (function ()
           k = n % 10,
           l = (!k || n > 5 && n < 21 || k > 4) ? 2 : ((k == 1) ? 0 : 1),
           t = w [q] [l];
-
-     
-      document.getElementById('mt').children [q].innerHTML  = n + '<p>' + t; 
+      document.getElementById ('mt').rows [0].cells [q].children [0].innerHTML = n + '<p>' + t; 
       }
    TMR = 1000;
    }, TMR);
