@@ -297,7 +297,7 @@ caption {
   }
 
   .slider .slick-arrow.slick-next {
-    right: 20%;
+    right: 15%;
   }
 }
 
@@ -307,7 +307,7 @@ caption {
   }
 
   .slider .slick-arrow.slick-next {
-    right: 10%;
+    right: 5%;
   }
 }
 
@@ -383,7 +383,7 @@ caption {
 
 @media (max-width: 360px) {
   #mt tr {
-    width: 88%;
+    width: 86%;
   }
 }
 @supports (-webkit-appearance:none){
