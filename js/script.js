@@ -38,7 +38,9 @@ setInterval (function ()
           k = n % 10,
           l = (!k || n > 5 && n < 21 || k > 4) ? 2 : ((k == 1) ? 0 : 1),
           t = w [q] [l];
-      document.getElementById ('mt').rows [0].cells [q].children [0].innerHTML = n + '<p>' + t; 
+
+     
+      document.getElementById ('mt').children [q].innerHTML  = n + '<p>' + t; 
       }
    TMR = 1000;
    }, TMR);
