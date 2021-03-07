@@ -190,7 +190,7 @@ caption {
 }
 
 .slider__item img {
-  max-height: 60%;
+  max-width: 300px;
 }
 
 .slick-track {
@@ -345,7 +345,7 @@ caption {
 @media (max-width: 530px) {
   .slider__item img {
     padding: 0 15px;
-    height: 40%;
+    max-width: 200px;
   }
 
   .slider {
@@ -406,7 +406,6 @@ caption {
 @media (max-width: 350px) {
   .slider__item img {
     padding: 0 15px;
-    height: 30%;
   }
 }
 @supports (-webkit-appearance:none){
